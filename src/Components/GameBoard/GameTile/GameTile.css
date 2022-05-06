@@ -57,6 +57,7 @@
     transform: rotateY(0deg);
     background-image: url(/src/imgs/tile.jpg);
     background-size: cover;
+    background-position: center;
     display: inline-block;
     vertical-align: middle;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
