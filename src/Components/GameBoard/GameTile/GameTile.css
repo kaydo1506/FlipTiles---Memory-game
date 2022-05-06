@@ -1,0 +1,98 @@
+.GameTile {
+    margin: 0 auto;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.container {
+    perspective: 800px;
+    position: relative;
+    box-sizing: border-box;
+    transform: scale(1);
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.container.matched {
+    transform: scale(0);
+    transition-duration: 500ms;
+    transition-property: transform;
+}
+
+.flipper {
+    transform-style: preserve-3d;
+    transition: transform 500ms;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.flipper.flipped {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 14px;
+}
+
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+    background-image: url(/src/imgs/tile.jpg);
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1em;
+    transition: all 500ms ease-out;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+}
+.tileimage {
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-position: center;
+}
+@media only screen and (max-width: 600px) {
+    .tileimage {
+        height: 70px;
+        width: 70px;
+        background-size: cover;
+        background-position: center;
+    }
+}
+.front:hover {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
+
+.back {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}

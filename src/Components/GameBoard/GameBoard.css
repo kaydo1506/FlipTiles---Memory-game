@@ -1,0 +1,51 @@
+.GameBoard {
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+}
+
+.header {
+    height: 20vh;
+    line-height: 20vh;
+}
+
+.title {
+    font-size: 32px;
+    color: teal;
+    font-weight: 600;
+}
+
+p {
+    color: #fff;
+    font-size: 24px;
+}
+
+.playButton {
+    background-color: teal;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    padding: 0px 40px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 8px;
+    display: inline-block;
+    user-select: none;
+    cursor: pointer;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition: all 0.35s ease-in-out;
+}
+
+.playButton:hover {
+    background-color: rgb(14, 100, 100);
+}
+
+.playButton:active {
+    background-color: teal;
+    color: #fff;
+}
