@@ -1,6 +1,6 @@
 .App {
     box-sizing: border-box;
-    border: 4px groove rgb(77, 60, 39);
+    border: 4px double rgb(77, 60, 39);
     text-align: center;
     background-color: white;
     width: 100%;

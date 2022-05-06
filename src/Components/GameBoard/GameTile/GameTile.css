@@ -68,17 +68,21 @@
     -o-transform: rotateY(0deg);
 }
 .tileimage {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     background-size: cover;
     background-position: center;
+}
+@media only screen and (max-width: 950px) {
+    .tileimage {
+        height: 100px;
+        width: 100px;
+    }
 }
 @media only screen and (max-width: 600px) {
     .tileimage {
         height: 70px;
         width: 70px;
-        background-size: cover;
-        background-position: center;
     }
 }
 .front:hover {

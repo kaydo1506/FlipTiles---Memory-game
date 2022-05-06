@@ -7,13 +7,13 @@
 
 .header {
     height: 20vh;
-    line-height: 20vh;
+    line-height: 10vh;
 }
 
 .title {
+    margin-top: 200px;
     font-size: 32px;
     color: teal;
-    font-weight: 600;
 }
 
 p {
