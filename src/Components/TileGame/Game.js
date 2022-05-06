@@ -22,7 +22,7 @@ class Game extends Component {
         if (!this.props.tiles.length || this.gameIsFinished())
             return (
                 <div className='header'>
-                    <div className='title'>FlipTiles</div>
+                    <div className='title'>Match each tile and clear the board.</div>
                     {winMessage()}
                     <div
                         className='playButton'
