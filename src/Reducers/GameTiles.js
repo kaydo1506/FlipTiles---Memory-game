@@ -46,7 +46,7 @@ const gameTiles = (state = [], action) => {
             if (selectedTiles.length === 2) {
                 if (selectedTiles[0].tileimage === selectedTiles[1].tileimage) {
                     tiles.map((t) => {
-                        if (selectedTiles.indexOf(t) != -1) t.matched = true;
+                        if (selectedTiles.indexOf(t) !== -1) t.matched = true;
 
                         return t;
                     });
